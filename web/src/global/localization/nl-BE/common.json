@@ -1,0 +1,17 @@
+{
+  "brand": "Firebase Seed",
+  "tagline": "Een propere, modulaire Firebase-starter.",
+  "nav": {
+    "signIn": "Aanmelden",
+    "signOut": "Afmelden",
+    "openApp": "Open app"
+  },
+  "theme": {
+    "toggle": "Kleurschema wisselen"
+  },
+  "language": "Taal",
+  "footer": {
+    "rights": "Alle rechten voorbehouden.",
+    "builtWith": "Gemaakt met React, Mantine & Firebase"
+  }
+}

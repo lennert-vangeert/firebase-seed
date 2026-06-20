@@ -1,0 +1,14 @@
+{
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "subtitle": "This page doesn't exist or may have moved.",
+    "home": "Back home"
+  },
+  "error": {
+    "code": "Oops",
+    "title": "Something went wrong",
+    "subtitle": "An unexpected error occurred. Try again.",
+    "home": "Back home"
+  }
+}

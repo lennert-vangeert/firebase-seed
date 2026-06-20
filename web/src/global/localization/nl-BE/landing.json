@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "badge": "React + Firebase starter",
+    "title": "Lanceer je Firebase-app",
+    "highlight": "sneller",
+    "subtitle": "Een propere, modulaire seed met Auth, Firestore, emulator-first development en een gedurfde Mantine-UI. Clone en begin te bouwen.",
+    "ctaPrimary": "Aan de slag",
+    "ctaSecondary": "Aanmelden"
+  },
+  "features": {
+    "auth": {
+      "title": "Authenticatie",
+      "description": "E-mail/wachtwoord + Google, meteen klaar achter een getypeerde AuthProvider."
+    },
+    "firestore": {
+      "title": "Cloud Firestore",
+      "description": "Modulaire data- en servicelagen met getypeerde converters en een cars-voorbeeldcollectie."
+    },
+    "emulator": {
+      "title": "Emulator-first",
+      "description": "Eén commando start de emulators, seedt verse data en start Vite."
+    }
+  }
+}

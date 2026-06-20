@@ -1,0 +1,14 @@
+{
+  "notFound": {
+    "code": "404",
+    "title": "Pagina niet gevonden",
+    "subtitle": "Deze pagina bestaat niet of is verplaatst.",
+    "home": "Terug naar start"
+  },
+  "error": {
+    "code": "Oeps",
+    "title": "Er ging iets mis",
+    "subtitle": "Er trad een onverwachte fout op. Probeer opnieuw.",
+    "home": "Terug naar start"
+  }
+}

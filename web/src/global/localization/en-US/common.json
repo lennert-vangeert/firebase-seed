@@ -1,0 +1,17 @@
+{
+  "brand": "Firebase Seed",
+  "tagline": "A clean, modular Firebase starter.",
+  "nav": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "openApp": "Open app"
+  },
+  "theme": {
+    "toggle": "Toggle color scheme"
+  },
+  "language": "Language",
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with React, Mantine & Firebase"
+  }
+}

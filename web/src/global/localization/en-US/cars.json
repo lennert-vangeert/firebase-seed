@@ -1,0 +1,51 @@
+{
+  "title": "Cars",
+  "signedInAs": "Signed in as {{email}}",
+  "addCar": "Add car",
+  "empty": "No cars yet — add your first one.",
+  "soldOn": "Sold {{date}}",
+  "meta": "{{year}} · {{km}} km",
+  "specs": "{{hp}} hp · {{topSpeed}} km/h · {{transmission}}",
+  "actions": {
+    "edit": "Edit car",
+    "delete": "Delete car"
+  },
+  "modal": {
+    "add": "Add car",
+    "edit": "Edit car"
+  },
+  "notifications": {
+    "created": "Car created",
+    "updated": "Car updated",
+    "deleted": "Car deleted",
+    "error": "Something went wrong."
+  },
+  "form": {
+    "make": "Make",
+    "model": "Model",
+    "imageUrl": "Image URL",
+    "year": "Year",
+    "price": "Price (€)",
+    "mileage": "Mileage (km)",
+    "fuelType": "Fuel type",
+    "electric": "Electric",
+    "features": "Features",
+    "featuresPlaceholder": "Type a feature and press Enter",
+    "horsepower": "Horsepower",
+    "topSpeed": "Top speed (km/h)",
+    "transmission": "Transmission",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "soldAt": "Sold at (optional)",
+    "cancel": "Cancel",
+    "save": "Save",
+    "create": "Create",
+    "required": "Required"
+  },
+  "fuel": {
+    "petrol": "Petrol",
+    "diesel": "Diesel",
+    "electric": "Electric",
+    "hybrid": "Hybrid"
+  }
+}

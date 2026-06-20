@@ -1,0 +1,62 @@
+rules_version = '2';
+
+// Security rules for the firebase-seed example.
+//   users  -> any signed-in user can read a profile; only the owner writes their own.
+//   cars   -> any signed-in user can read; only the car's owner can write/delete it.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function validUser(d) {
+      return d.displayName is string && d.displayName.size() <= 100
+             && d.email is string;
+    }
+
+    // Mirrors the Car type in src/data/cars.ts. Keep these in sync when you
+    // change the model. The seed runs via the Admin SDK and bypasses these rules.
+    function validCar(d) {
+      return d.make is string && d.make.size() >= 1 && d.make.size() <= 100
+             && d.model is string && d.model.size() >= 1 && d.model.size() <= 100
+             && d.year is number
+             && d.price is number
+             && d.mileageKm is number
+             && d.isElectric is bool
+             && d.fuelType in ['petrol', 'diesel', 'electric', 'hybrid']
+             && d.features is list
+             && d.specs is map
+             && d.location is latlng
+             && (d.soldAt == null || d.soldAt is timestamp)
+             && d.ownerId is string
+             && d.createdAt is timestamp
+             && d.updatedAt is timestamp;
+    }
+
+    match /users/{uid} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(uid) && validUser(request.resource.data);
+      allow delete: if isOwner(uid);
+    }
+
+    match /cars/{carId} {
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+                    && request.resource.data.ownerId == request.auth.uid
+                    && validCar(request.resource.data);
+
+      // owner-only writes; ownership cannot be transferred via update
+      allow update: if isOwner(resource.data.ownerId)
+                    && request.resource.data.ownerId == resource.data.ownerId
+                    && validCar(request.resource.data);
+
+      allow delete: if isOwner(resource.data.ownerId);
+    }
+  }
+}

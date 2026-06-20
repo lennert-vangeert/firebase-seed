@@ -1,0 +1,51 @@
+{
+  "title": "Auto's",
+  "signedInAs": "Aangemeld als {{email}}",
+  "addCar": "Auto toevoegen",
+  "empty": "Nog geen auto's — voeg je eerste toe.",
+  "soldOn": "Verkocht op {{date}}",
+  "meta": "{{year}} · {{km}} km",
+  "specs": "{{hp}} pk · {{topSpeed}} km/u · {{transmission}}",
+  "actions": {
+    "edit": "Auto bewerken",
+    "delete": "Auto verwijderen"
+  },
+  "modal": {
+    "add": "Auto toevoegen",
+    "edit": "Auto bewerken"
+  },
+  "notifications": {
+    "created": "Auto aangemaakt",
+    "updated": "Auto bijgewerkt",
+    "deleted": "Auto verwijderd",
+    "error": "Er ging iets mis."
+  },
+  "form": {
+    "make": "Merk",
+    "model": "Model",
+    "imageUrl": "Afbeelding-URL",
+    "year": "Bouwjaar",
+    "price": "Prijs (€)",
+    "mileage": "Kilometerstand (km)",
+    "fuelType": "Brandstof",
+    "electric": "Elektrisch",
+    "features": "Kenmerken",
+    "featuresPlaceholder": "Typ een kenmerk en druk op Enter",
+    "horsepower": "Vermogen (pk)",
+    "topSpeed": "Topsnelheid (km/u)",
+    "transmission": "Versnellingsbak",
+    "latitude": "Breedtegraad",
+    "longitude": "Lengtegraad",
+    "soldAt": "Verkocht op (optioneel)",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "create": "Aanmaken",
+    "required": "Verplicht"
+  },
+  "fuel": {
+    "petrol": "Benzine",
+    "diesel": "Diesel",
+    "electric": "Elektrisch",
+    "hybrid": "Hybride"
+  }
+}

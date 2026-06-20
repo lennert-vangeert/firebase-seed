@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "badge": "React + Firebase starter",
+    "title": "Ship your Firebase app",
+    "highlight": "faster",
+    "subtitle": "A clean, modular seed with Auth, Firestore, emulator-first dev and a bold Mantine UI. Clone it and start building.",
+    "ctaPrimary": "Get started",
+    "ctaSecondary": "Sign in"
+  },
+  "features": {
+    "auth": {
+      "title": "Authentication",
+      "description": "Email/password + Google, ready out of the box behind a typed AuthProvider."
+    },
+    "firestore": {
+      "title": "Cloud Firestore",
+      "description": "Modular data + services layers with typed converters and a cars example collection."
+    },
+    "emulator": {
+      "title": "Emulator-first dev",
+      "description": "One command boots the emulators, seeds fresh data and starts Vite."
+    }
+  }
+}

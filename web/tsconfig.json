@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      // Add aliases here and in the vite.config.ts
+      "@global/*": ["src/global/*"],
+      "@common/*": ["src/_common/*"],
+      "@data/*": ["src/data/*"],
+      "@services/*": ["src/services/*"]
+    }
+  }
+}
